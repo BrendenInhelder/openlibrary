@@ -888,7 +888,7 @@ class User(Thing):
             "type": {"key": "/type/list"},
             "name": name,
             "description": description,
-            "seeds": seeds,
+            #"seeds": seeds,
             "tags": tags,
         }
         return self._site.new(key, doc)

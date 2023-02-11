@@ -85,7 +85,7 @@ function get_seed_count() {
 
 window.q.push(function(){
     \$(".listDelete a").on('click', function() {
-        if (get_seed_count() > 1) {
+        if (get_seed_count() >= 0) {
             \$("#remove-seed-dialog")
                 .data("seed-key", \$(this).closest("[data-seed-key]").data('seed-key'))
                 .dialog("open");
